@@ -12,17 +12,12 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/login", function (req, res, next) {
-  res.render("login", { title: "Login" });
+  res.render("login", { title: "Login", error: req.flash("error") });
 });
 
 router.get("/feed", function (req, res, next) {
   res.render("feed", { title: "feed" });
 });
-
-router.get("/profile", function (req, res, next) {
-  res.render("profile", { title: "profile" });
-});
-
 
 router.post("/register", function (req, res) {
   const { username, email, fullName } = req.body;
@@ -40,6 +35,7 @@ router.post(
   passport.authenticate("local", {
     successRedirect: "/profile",
     failureRedirect: "/login",
+    failureFlash: true,
   }),
   function (req, res) {}
 );
@@ -54,9 +50,8 @@ router.get("/logout", function (req, res) {
 });
 
 router.get("/profile", isLoggedIn, function (req, res) {
-  res.send("/profile data");
+  res.render("profile", { title: "profile" });
 });
-
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) return next();
