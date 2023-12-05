@@ -1,107 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #e1e7ed;
-    text-align: center;
+  background-color: #e1e7ed;
+  text-align: center;
 }
 
 h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #33363b;
-    margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #33363b;
+  margin: 10px 0px;
 }
 
-p{
-    margin: auto;
-    font-size: 14px;
-    color: #868d9b;
+p {
+  margin: auto;
+  font-size: 14px;
+  color: #868d9b;
 }
 
 .profilecard {
-    width: 80%;
-    height: 20%;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 10px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  height: 20%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 .card_profile_img {
-    width: 120px;
-    height: 120px;
-    background-color: #868d9b;
-    background: url("https://source.unsplash.com/7Sz71zuuW4k");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #ffffff;
-    border-radius: 120px;
-    margin: 0 auto;
-    margin-top: -60px;
-
+  width: 120px;
+  height: 120px;
+  background-color: #868d9b;
+  background: url("https://source.unsplash.com/7Sz71zuuW4k");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 120px;
+  margin: 0 auto;
+  margin-top: -60px;
 }
 
 .card_background_img {
-    width: 100%;
-    height: 180px;
-    background-color: #e1e7ed;
-    background: url("https://source.unsplash.com/9wg5jCEPBsw");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 180px;
+  background-color: #e1e7ed;
+  background: url("https://source.unsplash.com/9wg5jCEPBsw");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .user_details p {
-    margin-bottom: 20px;
-    margin-top: -5px;
+  margin-bottom: 20px;
+  margin-top: -5px;
 }
 
 .user_details h3 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card_count {
-    padding: 30px;
-    border-top: 1px solid #dde1e7;
+  padding: 30px;
+  border-top: 1px solid #dde1e7;
 }
 
-.container{
-    margin-left: 9%;
-    margin-right: auto;
-    margin-top: 3%;
-}
+
 
 .count {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
 }
 
 .count p {
-    margin-top: -10px;
+  margin-top: -10px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  width: calc(33.33% - 20px); /* Adjust width as per your layout */
+  /* Other styles for the container */
+}
+
+.card {
+  width: 100%;
+  /* Other styles for the card */
 }
 
 .btn {
-    padding: 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: #c52431;
-    color: #ffffff;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #c52431;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.btn:hover{
-    background-color: #94030f;
+.btn:hover {
+  background-color: #94030f;
 }
